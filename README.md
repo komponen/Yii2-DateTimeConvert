@@ -22,8 +22,7 @@ Petunjuk Pengunaan
  
 3. Lainya
    Yii2 menambahkan di model
-   
-    public function fields()
+       public function fields()
 	{
 		return [
 			'tgl'=>function($model){
