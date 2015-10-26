@@ -1,5 +1,6 @@
 # Yii2-DateTimeConvert
 Mengubah Tanggal dan jam Asia/Jakarta
+Misal format: yyyy-dd-mm ke dd-mm-yyyy
 
 Yii2 Components Convert Date & datetime waktu Asia/Jakarta
 Petunjuk Pengunaan
