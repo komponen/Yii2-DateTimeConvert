@@ -4,9 +4,7 @@
  * User: ptr.nov
  * Date: 10/08/15
  * Time: 19:44
- * conf php.ini (/etc/php.ini) path php install
- * date.timezone ='Asia/Jakarta'
- * /
+ */
 
 namespace common\components;
 use Yii;
@@ -15,11 +13,10 @@ use yii\helpers\ArrayHelper;
 use yii\base\Component;
 
 class TgljamconvertComponent {	
-    const DATE_FORMAT = 'php:d-m-Y';
-    const DATETIME_FORMAT = 'php:d-m-Y H:i:s';
+    const DATE_FORMAT = 'php:d/m/Y';
+    const DATETIME_FORMAT = 'php:d/m/Y H:i:s';
     const TIME_FORMAT = 'php:H:i:s';
 
-    //Convert tanggal
     public static function convert($dateStr, $type='date', $format = null) {
         if ($type === 'datetime') {
               $fmt = ($format == null) ? self::DATETIME_FORMAT : $format;
@@ -32,9 +29,8 @@ class TgljamconvertComponent {
         }
         return \Yii::$app->formatter->asDate($dateStr, $fmt);
     }
-    
-    //Menghitung Selisih Tanggal
-    public static function Tgldiff($tgl_max,$tgl_min,$opt){
+	
+	public static function Tgldiff($tgl_max,$tgl_min,$opt){
 		$date1 = date_create($tgl_max);
 		$date2 = date_create($tgl_min);
 		$interval =date_diff($date1,$date2);
@@ -46,8 +42,8 @@ class TgljamconvertComponent {
 			$fmt_interval=$interval->d;
 		}
 		return $fmt_interval;
-     }
-     public static function tglSekarang(){
+	}
+	public static function tglSekarang(){
     	return date('Y-m-d');
     } 
     
@@ -58,9 +54,7 @@ class TgljamconvertComponent {
     public static function tgljamSekarang(){
     	return date('Y-m-d h:i:s');
     } 
-   
-} 
-
+}
 /* Yii2 Components Convert Date & datetime waktu Asia/Jakarta
 Petunjuk Pengunaan
 
