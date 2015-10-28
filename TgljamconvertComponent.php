@@ -47,7 +47,17 @@ class TgljamconvertComponent {
 		}
 		return $fmt_interval;
      }
-     
+     public static function tglSekarang(){
+    	return date('Y-m-d');
+    } 
+    
+    public static function jamSekarang(){
+    	return date('h:i:s');
+    } 
+    
+    public static function tgljamSekarang(){
+    	return date('Y-m-d h:i:s');
+    } 
    
 } 
 
