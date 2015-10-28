@@ -6,6 +6,11 @@
  * Time: 19:44
  */
 
+/**
+ * conf php.ini (/etc/php.ini) path php install
+ * date.timezone ='Asia/Jakarta'
+ * /
+
 namespace common\components;
 use Yii;
 use yii\helpers\Html;
@@ -45,6 +50,18 @@ class TgljamconvertComponent {
 		}
 		return $fmt_interval;
      }
+     
+    public static ambilTglSekarang(){
+    	return date('Y-m-d')
+    } 
+    
+    public static ambilJamSekarang(){
+    	return date('h:i:s')
+    } 
+    
+    public static ambilTgljamSekarang(){
+    	return date('Y-m-d h:i:s')
+    } 
 } 
 
 /* Yii2 Components Convert Date & datetime waktu Asia/Jakarta
