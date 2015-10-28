@@ -4,9 +4,6 @@
  * User: ptr.nov
  * Date: 10/08/15
  * Time: 19:44
- */
-
-/**
  * conf php.ini (/etc/php.ini) path php install
  * date.timezone ='Asia/Jakarta'
  * /
@@ -95,4 +92,4 @@ Petunjuk Pengunaan
 		];
 	}
    
-
+*/
