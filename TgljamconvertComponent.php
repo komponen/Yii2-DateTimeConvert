@@ -51,15 +51,15 @@ class TgljamconvertComponent {
 		return $fmt_interval;
      }
      
-    public static function ambilTglSekarang(){
+    public static function tglSekarang(){
     	return date('Y-m-d');
     } 
     
-    public static function ambilJamSekarang(){
+    public static function jamSekarang(){
     	return date('h:i:s');
     } 
     
-    public static function ambilTgljamSekarang(){
+    public static function tgljamSekarang(){
     	return date('Y-m-d h:i:s');
     } 
 } 
