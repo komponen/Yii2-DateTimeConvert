@@ -4,6 +4,12 @@
  * User: ptr.nov
  * Date: 10/08/15
  * Time: 19:44
+ * 
+ * Conf etc/php.ini ->path php install
+ * [Date]
+ * Defines the default timezone used by the date functions
+ * http://www.php.net/manual/en/datetime.configuration.php#ini.date.timezone
+ * date.timezone ='Asia/Jakarta'
  */
 
 namespace common\components;
