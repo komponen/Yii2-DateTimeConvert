@@ -52,15 +52,15 @@ class TgljamconvertComponent {
      }
      
     public static ambilTglSekarang(){
-    	return date('Y-m-d')
+    	return date('Y-m-d');
     } 
     
     public static ambilJamSekarang(){
-    	return date('h:i:s')
+    	return date('h:i:s');
     } 
     
     public static ambilTgljamSekarang(){
-    	return date('Y-m-d h:i:s')
+    	return date('Y-m-d h:i:s');
     } 
 } 
 
